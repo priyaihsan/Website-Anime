@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+/* responsive untuk android */
+
+
+@media (min-device-width: 0px) and (max-device-width: 1024px) {
+    body{
+        display: none;
+    }
+}
+
+
+/* responsive on PC */
+@media (min-width: 1025px) {
+    .img-banner{
+        background-image: url(img/caracter/8zfnjuhmu1c61.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+
+    body{
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    body p{
+        font-size: 18px;
+    }
+    
+    .container{
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #navbar{
+        margin-top: -1px;
+        background-color:#FEDF32;
+        position:absolute;
+        padding: 15px;
+    }
+    #navbar a{
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .sticky {
+        margin-top: 0 !important;
+        position: fixed !important;
+        top: 0;
+        width:auto
+    
+    }
+
+    .android-responsive-blob{
+        background:url(svg/ai-blob.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-ai{
+        margin-top: -152px;
+        width: 240px;
+        margin-left: 76px;
+        position: absolute;
+    }
+    
+    .row{
+        display: flex;
+        margin-top: 110px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    
+    .appearance{
+        font-size: 18px;
+        margin-top: 94px;
+        background-color: #FEDF32;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .eye{
+        background:url(img/caracter/maxresdefault.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+    }
+    
+    .gallery{
+        --column-gutter: 24px;
+        --columns: 2;
+        grid-column-gap: var(--column-gutter);
+        align-items: start;
+        display: grid;
+        grid-template-columns: repeat(var(--columns),minmax(0,1fr));
+    }
+    .gallery img{
+        vertical-align: middle;
+        border-style: none;
+        width: 100%;
+    }
+    .left,.right{
+        --row-gutter: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: var(--row-gutter);
+    }
+    
+    
+    .title{
+        font-size: 25px;
+        padding: 0;
+        margin: 13px;
+        font-weight: bold;
+    }
+    
+    .personality{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .bg-image{
+        background: url(img/caracter/Wonder-Egg-Priority-01-35.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 20%;
+        background-position:160px ;
+    }
+    
+    .footer{
+        background-color: #FEDF32;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .footer p{
+        padding: 19px;
+        text-align: center;
+    }
+
+    .text-personality{
+        width: 510px;
+        padding:50px 50px 0 20px
+    }
+
+    .sub-title{
+        font-size: 150px;
+        font-family: 'Dela Gothic One', cursive;
+        margin: 0;
+    }
+}
